@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+  <fragment
+      android:id="@+id/dashboardFragment"
+      android:name="com.rofhiwa.simfycatsapp.ui.dashboard.DashboardFragment"
+      android:label="@string/app_name"
+      tools:layout="@layout/fragment_dashboard">
+    <action
+        android:id="@+id/actionToCatsInfoFragment"
+        app:destination="@id/catsInfoFragment" />
+  </fragment>
+  <fragment
+      android:id="@+id/catsInfoFragment"
+      android:name="com.rofhiwa.simfycatsapp.ui.info.CatsInfoFragment"
+      android:label="@string/title_cat_information"
+      tools:layout="@layout/fragment_cats_info">
+
+    <argument
+        android:name="imageTitle"
+        app:argType="string"
+        app:nullable="false" />
+    <argument
+        android:name="imageUrl"
+        app:argType="string"
+        app:nullable="false" />
+    <argument
+        android:name="imageDescription"
+        app:argType="string"
+        app:nullable="false" />
+  </fragment>
+</navigation>

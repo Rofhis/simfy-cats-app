@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">Simfy Cats App</string>
+  <string name="lbl_play">PLAY AUDIO</string>
+  <string name="lbl_stop">STOP AUDIO</string>
+  <string name="msg_tap_to_exit">Tap back button again to exit</string>
+  <string name="title_cat_information">Cat details</string>
+  <string name="msg_network_required">This application requires network connection to work.\n\nPlease enable WIFI or Mobile data.</string>
+  <string name="lbl_open_network">OPEN SETTINGS</string>
+</resources>
